@@ -3,6 +3,7 @@ global:
   external_labels:
     monitor: 'bombergame-monitor'
 
-consul_sd_configs:
-  - server: 'registry:8500'
+scrape_configs:
+  - consul_sd_configs:
+      server: 'registry:8500'
 
