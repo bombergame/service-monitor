@@ -4,6 +4,6 @@ global:
     monitor: 'bombergame-monitor'
 
 scrape_configs:
-  - consul_sd_configs:
-      server: 'registry:8500'
-
+  - job_name: bombergame_services
+    consul_sd_configs:
+      - server: 'registry:8500'
